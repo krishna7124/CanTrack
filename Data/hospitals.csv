@@ -1,17 +1,7 @@
-<<<<<<< HEAD
 Name,Location,Contact,Speciality,Free_Treatment,Website
-"AIIMS Delhi","New Delhi, India","+91 11 2658 8500","Multi-specialty, Cancer Treatment","Yes (For Needy Patients)","https://www.aiims.edu"
-"Tata Memorial Hospital","Mumbai, India","+91 22 2417 7000","Cancer Treatment","Yes (For Needy Patients)","https://tmc.gov.in"
-"Apollo Hospitals","Chennai, India","+91 44 2829 3333","Multi-specialty","No","https://www.apollohospitals.com"
-"CMC Vellore","Vellore, India","+91 416 228 1000","Multi-specialty, Cancer Treatment","Yes (Through Funding & Charity)","https://www.cmch-vellore.edu"
-"Narayan Health","Bangalore, India","+91 80 7122 2222","Cardiology, Oncology, Neurology","Yes (For Needy Patients)","https://www.narayanahealth.org"
-"Max Super Specialty Hospital","New Delhi, India","+91 11 2651 5050","Multi-specialty","No","https://www.maxhealthcare.in"
-=======
-Name,Location,Contact,Speciality,Free_Treatment,Website
-"AIIMS Delhi","New Delhi, India","+91 11 2658 8500","Multi-specialty, Cancer Treatment","Yes (For Needy Patients)","https://www.aiims.edu"
-"Tata Memorial Hospital","Mumbai, India","+91 22 2417 7000","Cancer Treatment","Yes (For Needy Patients)","https://tmc.gov.in"
-"Apollo Hospitals","Chennai, India","+91 44 2829 3333","Multi-specialty","No","https://www.apollohospitals.com"
-"CMC Vellore","Vellore, India","+91 416 228 1000","Multi-specialty, Cancer Treatment","Yes (Through Funding & Charity)","https://www.cmch-vellore.edu"
-"Narayan Health","Bangalore, India","+91 80 7122 2222","Cardiology, Oncology, Neurology","Yes (For Needy Patients)","https://www.narayanahealth.org"
-"Max Super Specialty Hospital","New Delhi, India","+91 11 2651 5050","Multi-specialty","No","https://www.maxhealthcare.in"
->>>>>>> 5cd86bd9ac8fecd9edf47899adfe40db089443db
+AIIMS Delhi,"New Delhi, India",+91 11 2658 8500,"Multi-specialty, Cancer Treatment",Yes (For Needy Patients),https://www.aiims.edu
+Tata Memorial Hospital,"Mumbai, India",+91 22 2417 7000,Cancer Treatment,Yes (For Needy Patients),https://tmc.gov.in
+Apollo Hospitals,"Chennai, India",+91 44 2829 3333,Multi-specialty,No,https://www.apollohospitals.com
+CMC Vellore,"Vellore, India",+91 416 228 1000,"Multi-specialty, Cancer Treatment",Yes (Through Funding & Charity),https://www.cmch-vellore.edu
+Narayan Health,"Bangalore, India",+91 80 7122 2222,"Cardiology, Oncology, Neurology",Yes (For Needy Patients),https://www.narayanahealth.org
+Max Super Specialty Hospital,"New Delhi, India",+91 11 2651 5050,Multi-specialty,No,https://www.maxhealthcare.in
