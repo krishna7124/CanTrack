@@ -1,15 +1,7 @@
-<<<<<<< HEAD
 streamlit
 tensorflow
 opencv-python-headless
 numpy==1.26.4
 Pillow
 pandas
-=======
-streamlit
-tensorflow
-opencv-python-headless
-numpy==1.26.4
-Pillow
-pandas
->>>>>>> 5cd86bd9ac8fecd9edf47899adfe40db089443db
+
