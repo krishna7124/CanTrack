@@ -290,7 +290,7 @@ elif option == "🏥 Hospitals & Recognized Doctors":
         if pd.notna(row['Website']):  # Ensure the website column isn't empty
             st.markdown(f"[🌐 Visit Website]({row['Website']})", unsafe_allow_html=True)
 
-=======
+
 import streamlit as st
 from tensorflow.keras.models import load_model
 import cv2
