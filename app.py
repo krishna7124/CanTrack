@@ -275,19 +275,26 @@ elif option == "📅 Book an Appointment":
 elif option == "🏥 Hospitals & Recognized Doctors":
     st.subheader("🏥 List of Hospitals and Recognized Doctors")
     
-    # Load hospital data from CSV
-    hospitals = pd.read_csv(r"Data/hospitals.csv")
-
-    for _, row in hospitals.iterrows():
-        st.write(f"### 🏥 {row['Name']}")
-        st.write(f"📍 Location: {row['Location']}")
-        st.write(f"📞 Contact: {row['Contact']}")
-        st.write(f"🔬 Speciality: {row['Speciality']}")
-        st.write(f"💰 Free/Low-Cost Treatment: {row['Free_Treatment']}")
+    try:
+        # Load hospital data from CSV
+        hospitals = pd.read_csv(r"Data/hospitals.csv")
         
-        # Add a clickable link to the hospital website
-        if pd.notna(row['Website']):  # Ensure the website column isn't empty
-            st.markdown(f"[🌐 Visit Website]({row['Website']})", unsafe_allow_html=True)
-
-
-        st.write("---")
+        # Check if required columns exist
+        required_columns = ['Name', 'Location', 'Contact', 'Speciality', 'Free_Treatment', 'Website']
+        if not all(col in hospitals.columns for col in required_columns):
+            st.error("Error: The hospitals CSV file doesn't have the expected columns.")
+            st.write("Available columns:", hospitals.columns.tolist())
+        else:
+            for _, row in hospitals.iterrows():
+                st.write(f"### 🏥 {row['Name']}")
+                st.write(f"📍 Location: {row['Location']}")
+                st.write(f"📞 Contact: {row['Contact']}")
+                st.write(f"🔬 Speciality: {row['Speciality']}")
+                st.write(f"💰 Free/Low-Cost Treatment: {row['Free_Treatment']}")
+                
+                if pd.notna(row['Website']):
+                    st.markdown(f"[🌐 Visit Website]({row['Website']})", unsafe_allow_html=True)
+                
+                st.write("---")
+    except Exception as e:
+        st.error(f"An error occurred while loading hospital data: {str(e)}")
