@@ -582,5 +582,5 @@ elif option == "🏥 Hospitals & Recognized Doctors":
         if pd.notna(row['Website']):  # Ensure the website column isn't empty
             st.markdown(f"[🌐 Visit Website]({row['Website']})", unsafe_allow_html=True)
 
->>>>>>> 5cd86bd9ac8fecd9edf47899adfe40db089443db
+
         st.write("---")
