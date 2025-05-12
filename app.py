@@ -147,9 +147,9 @@ if option == "🧠 Brain Tumor Detection":
         st.image(original_image, caption="Original Uploaded Image", use_container_width=False)
 
         # Highlight the brain tumor area in the image
-        highlighted_image = highlight_brain_tumor_area(image_path)
-        if highlighted_image is not None:
-            st.image(highlighted_image, caption="Highlighted Brain Tumor Area", use_container_width=False)
+        # highlighted_image = highlight_brain_tumor_area(image_path)
+        # if highlighted_image is not None:
+        #     st.image(highlighted_image, caption="Highlighted Brain Tumor Area", use_container_width=False)
 
         processed_image = preprocess_image(original_image)
         prediction = brain_tumor_model.predict(processed_image)
@@ -176,9 +176,9 @@ elif option == "🫁 Lung Cancer Detection":
         st.image(original_image, caption="Original Uploaded Image", use_container_width=False)
 
         # Highlight the lung area in the image
-        highlighted_image = highlight_lung_area(image_path)
-        if highlighted_image is not None:
-            st.image(highlighted_image, caption="Highlighted Lung Area", use_container_width=False)
+        # highlighted_image = highlight_lung_area(image_path)
+        # if highlighted_image is not None:
+        #     st.image(highlighted_image, caption="Highlighted Lung Area", use_container_width=False)
 
         result = predict_lung_cancer(image_path)
 
