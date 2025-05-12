@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import streamlit as st
 from tensorflow.keras.models import load_model
 import cv2
