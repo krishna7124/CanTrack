@@ -11,21 +11,24 @@ st.set_page_config(
     layout="centered"
 )
 
+# --- BASE DIRECTORY ---
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # --- MODEL CONFIGURATION ---
 MODELS_CONFIG = {
     "Leukemia Classifier (ALL)": {
-        "model_path": r"./best_all_model.keras",   # same dir as app.py
+        "model_path": os.path.join(BASE_DIR, "best_all_model.keras"),  # Safe absolute path
         "image_size": (456, 456),
         "class_names": ['all_benign', 'all_early', 'all_pre', 'all_pro'],
         "description": "This model classifies Acute Lymphoblastic Leukemia subtypes from blood smear images."
     },
     "Brain Cancer Classifier": {
-        "model_path": r"./best_brain_model.keras",  # same dir as app.py
+        "model_path": os.path.join(BASE_DIR, "best_brain_model.keras"),
         "image_size": (380, 380),
         "class_names": ['brain_glioma', 'brain_menin', 'brain_tumor'],
         "description": "This model classifies brain tumor types (Glioma, Meningioma, Pituitary) from MRI scans."
     }
-    # You can add more models here if needed
+    # Add more models here if needed
 }
 
 # --- HELPER FUNCTIONS ---
@@ -102,4 +105,3 @@ if model:
             st.metric(label="Confidence", value=f"{confidence:.2f}%")
 else:
     st.warning("⚠️ Model not loaded. Please ensure the .keras files are in the same folder as this app.")
-
